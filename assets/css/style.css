@@ -35,6 +35,18 @@ a{color:inherit}
   display:flex; align-items:center; gap:10px;
   font-weight:800; letter-spacing:.3px;
 }
+
+.brand img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+.brand .brand-name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .badge{
   font-size:12px;
   padding:3px 10px;
