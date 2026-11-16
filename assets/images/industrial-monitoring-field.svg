@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">Factory tanks, radar sensor and monitoring overview</title>
-  <desc id="desc">Actual factory tank and radar sensor photographs beside a conceptual diagram of level and temperature sensing, a gateway and a monitoring display. The tank photograph shows the setting, not the scope of installed monitoring.</desc>
+  <desc id="desc">Actual factory tank and radar sensor photographs beside a conceptual cutaway of a tank: radar echoes from the liquid surface, an immersed RTD probe, an edge node, cloud telemetry, a dashboard and WhatsApp notifications. The tank photograph shows the setting, not the scope of installed monitoring.</desc>
   <defs><clipPath id="tanks"><rect x="24" y="32" width="540" height="430" rx="12"/></clipPath><clipPath id="photo"><rect x="384" y="218" width="160" height="228" rx="10"/></clipPath><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#204052" stroke-width="1" opacity=".36"/></pattern></defs>
   <rect width="1200" height="520" fill="#102332"/>
   <rect x="590" width="610" height="520" fill="url(#grid)"/>
@@ -13,23 +13,95 @@
   <rect x="384.5" y="218.5" width="159" height="227" rx="10" stroke="#a9d3ce"/>
   <rect x="392" y="414" width="144" height="25" rx="4" fill="#102332" fill-opacity=".94"/>
   <text x="402" y="432" fill="#dcece8" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing=".8">RADAR SENSOR</text>
-  <text x="622" y="72" fill="#dcece8" font-family="Arial,sans-serif" font-size="25" font-weight="600">From measurement to visibility</text>
-  <g transform="translate(590 100)">  <g stroke="#8FC9D5" stroke-width="2.5" stroke-linejoin="round">
-    <path d="M72 100Q72 76 129 76Q186 76 186 100V212Q186 236 129 236Q72 236 72 212Z" fill="#183849"/><ellipse cx="129" cy="100" rx="57" ry="24"/><path d="M72 158Q129 182 186 158M72 196Q129 220 186 196"/>
-    <path d="M224 133Q224 113 264 113Q304 113 304 133V212Q304 232 264 232Q224 232 224 212Z" fill="#183849"/><ellipse cx="264" cy="133" rx="40" ry="20"/>
-    <path d="M224 183Q264 203 304 183M94 232V250M164 232V250M240 229V250M288 229V250M330 222H372V199H400M186 210H208V248H343V222"/>
-    <rect x="400" y="106" width="132" height="96" rx="8" fill="#102332"/><path d="M450 202V226M482 202V226M436 226H496"/>
+  <g transform="translate(590 0)">  <defs>
+    <pattern id="flow-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#204052" opacity=".32"/></pattern>
+    <linearGradient id="flow-liquid" x1="140" y1="276" x2="140" y2="417" gradientUnits="userSpaceOnUse"><stop stop-color="#287b8c"/><stop offset="1" stop-color="#154659"/></linearGradient>
+    <clipPath id="flow-tank"><path d="M44 190C44 156 236 156 236 190V394C236 428 44 428 44 394Z"/></clipPath>
+    <marker id="flow-arrow" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L6.5 4L1 7" stroke="#9ed1e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="flow-echo-arrow" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1L6.5 4L1 7" stroke="#c3f4e9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="610" height="520" fill="#102332"/>
+  <rect width="610" height="520" fill="url(#flow-grid)"/>
+  <g font-family="Arial,sans-serif">
+    <text x="32" y="66" fill="#e3f0f0" font-size="26" font-weight="600">From tank to dashboard</text>
+    <text x="102" y="111" fill="#71e0a1" font-size="21" text-anchor="middle">Radar level</text>
+    <text x="198" y="111" fill="#f0c47c" font-size="21" text-anchor="middle">RTD</text>
   </g>
-  <g stroke="#61D98B" stroke-width="2.5" stroke-linecap="round">
-    <path d="M129 76V44H466V106M264 113V66H384V154H400" stroke-dasharray="4 7"/><path d="M420 128H446M420 153H446M420 178H446M463 128H512M463 153H499M463 178H506"/>
-    <path d="M336 124V174A10 10 0 1 0 348 174V124A6 6 0 0 0 336 124Z" fill="#102332"/><path d="M342 148V184"/><circle cx="129" cy="76" r="5" fill="#61D98B"/><circle cx="264" cy="113" r="5" fill="#61D98B"/>
+  <!-- Independent sensor connections to the edge node. -->
+  <g stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 145H321Q333 145 333 157V169H367" stroke="#71e0a1"/>
+    <path d="M209 151H301Q312 151 312 163V192H367" stroke="#f0c47c"/>
   </g>
+  <!-- Tank cutaway with a visible liquid surface. -->
+  <path d="M44 190C44 156 236 156 236 190V394C236 428 44 428 44 394Z" fill="#163344"/>
+  <g clip-path="url(#flow-tank)">
+    <path d="M44 300H236V430H44Z" fill="url(#flow-liquid)"/>
+    <ellipse cx="140" cy="300" rx="96" ry="23" fill="#328294"/>
+    <path d="M55 343Q140 373 225 343M55 377Q140 407 225 377" stroke="#6eb4bf" stroke-opacity=".2" stroke-width="2"/>
+    <path d="M102 194L60 294Q102 311 144 294Z" fill="#71e0a1" fill-opacity=".07"/>
+    <path d="M102 194L60 294M102 194L144 294" stroke="#71e0a1" stroke-width="1.5" stroke-opacity=".35" stroke-dasharray="4 6"/>
+    <g stroke="#71e0a1" stroke-width="3" stroke-linecap="round">
+      <path d="M88 216Q102 226 116 216"/>
+      <path d="M80 238Q102 254 124 238" stroke-opacity=".85"/>
+      <path d="M71 263Q102 284 133 263" stroke-opacity=".65"/>
+    </g>
+    <ellipse cx="102" cy="300" rx="32" ry="7" stroke="#b9eadb" stroke-width="1.5" stroke-opacity=".65"/>
+    <path d="M139 290L113 219" stroke="#c3f4e9" stroke-width="2" stroke-dasharray="4 5" marker-end="url(#flow-echo-arrow)"/>
+  </g>
+  <g stroke="#9ed1e0" stroke-width="2.5">
+    <path d="M44 190V394C44 428 236 428 236 394V190"/>
+    <ellipse cx="140" cy="190" rx="96" ry="25"/>
+    <path d="M65 413V429M214 413V429" stroke-linecap="round"/>
+  </g>
+  <!-- Radar transmitter mounted at the roof; signal travels through the headspace. -->
+  <g stroke="#71e0a1" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="84" y="133" width="34" height="26" rx="7" fill="#235647"/>
+    <path d="M91 133V127H111V133M101 159V173M84 174H118"/>
+    <path d="M96 177H106L112 192H90Z" fill="#235647"/>
+    <path d="M92 143H110" stroke-width="2"/>
+  </g>
+  <!-- RTD stem is visibly immersed in the liquid. -->
+  <path d="M198 166V351" stroke="#d4dfe3" stroke-width="10" stroke-linecap="round"/>
+  <path d="M198 169V351" stroke="#f0c47c" stroke-width="3" stroke-linecap="round"/>
+  <rect x="187" y="139" width="22" height="27" rx="5" fill="#55452c" stroke="#f0c47c" stroke-width="2.5"/>
+  <path d="M184 176H212" stroke="#f0c47c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="198" cy="350" r="6" fill="#f0c47c"/>
+  <!-- Edge electronics. -->
+  <g stroke="#9ed1e0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="367" y="136" width="86" height="76" rx="10" fill="#193e50"/>
+    <rect x="388" y="153" width="30" height="29" rx="4" fill="#102332"/>
+    <path d="M395 147V153M404 147V153M413 147V153M395 182V188M404 182V188M413 182V188M382 160H388M382 169H388M418 160H424M418 169H424M378 201H415" stroke-width="2"/>
+    <circle cx="436" cy="198" r="3" fill="#71e0a1" stroke="none"/>
+    <path d="M410 222V257" marker-end="url(#flow-arrow)"/>
+  </g>
+  <!-- Cloud telemetry and dashboard are distinct stages. -->
+  <path d="M380 321H440C468 321 472 284 445 281C442 251 400 248 391 275C367 270 352 300 370 315Q374 319 380 321Z" fill="#193e50" stroke="#9ed1e0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M410 308V283M400 293L410 283L420 293M410 332V368" stroke="#9ed1e0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M410 342V368" stroke="#9ed1e0" stroke-width="2.5" marker-end="url(#flow-arrow)"/>
+  <path d="M410 342H287V368" stroke="#9ed1e0" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#flow-arrow)"/>
+  <circle cx="410" cy="342" r="3" fill="#9ed1e0"/>
+  <g stroke="#71e0a1" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="265" y="378" width="44" height="69" rx="8" fill="#133b32"/>
+    <path d="M281 385H293M283 439H291" stroke-width="2"/>
+    <path d="M277 397H298V416H285L278 421V416H277Z" fill="#235647"/>
+    <path d="M282 404H292M282 410H290" stroke-width="1.5"/>
+  </g>
+  <g stroke="#9ed1e0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="354" y="378" width="112" height="68" rx="7" fill="#102332"/>
+    <path d="M354 393H466M399 446V459M421 446V459M387 460H433"/>
+    <path d="M366 403H386V433H366Z" fill="#246478" stroke="none"/>
+    <path d="M396 430L409 419L421 424L438 404L453 409" stroke="#71e0a1"/>
+    <path d="M396 434H454" stroke-opacity=".4" stroke-width="1.5"/>
+  </g>
+  <g fill="#d5e8ec" font-family="Arial,sans-serif" font-size="21">
+    <text x="472" y="179">Edge node</text>
+    <text x="472" y="303">Cloud</text>
+    <text x="478" y="422">Dashboard</text>
+    <text x="140" y="456" text-anchor="middle" font-size="20">Level + temperature</text>
+    <text x="287" y="469" text-anchor="middle" font-size="18" fill="#71e0a1">WhatsApp</text>
+  </g>
+  <path d="M32 478H582" stroke="#2c4a5a"/>
+  <text x="32" y="506" fill="#88abb9" font-family="Arial,sans-serif" font-size="19">Conceptual monitoring flow</text>
 </g>
-  <rect x="928" y="305" width="48" height="40" rx="5" fill="#183849" stroke="#8fc9d5" stroke-width="2.5"/>
-  <path d="M938 315H966M938 322H958" stroke="#8fc9d5" stroke-width="2" stroke-linecap="round"/>
-  <g fill="#61d98b"><circle cx="939" cy="335" r="2.5"/><circle cx="950" cy="335" r="2.5"/></g>
-  <g fill="#c4dce3" font-family="Arial,sans-serif" font-size="20" text-anchor="middle"><text x="790" y="396">Level + temperature</text><text x="952" y="396">Gateway</text><text x="1063" y="396">Dashboard</text></g>
-  <path d="M622 430H1150" stroke="#2c4a5a"/>
-  <text x="622" y="462" fill="#88abb9" font-family="Arial,sans-serif" font-size="20">Conceptual system flow</text>
   <text x="24" y="496" fill="#88abb9" font-family="Arial,sans-serif" font-size="20">Photos from the field</text>
 </svg>

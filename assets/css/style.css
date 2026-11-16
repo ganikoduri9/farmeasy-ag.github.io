@@ -55,6 +55,7 @@ li+li{margin-top:.5rem}
 .domain-image{width:100%;height:240px;object-fit:cover}
 .agriculture .domain-image{object-position:center 52%}
 .industrial .domain-image{object-fit:contain;background:#102332}
+.industrial picture{display:block}
 .illustration-wrap{position:relative}
 .illustration-wrap .domain-image{object-fit:contain;background:#102332}
 .illustration-label{position:absolute;right:12px;bottom:8px;font-size:9px;color:var(--industrial);letter-spacing:.05em}
@@ -161,3 +162,22 @@ html{scroll-padding-top:155px}.container{padding-inline:22px}.nav{flex-wrap:wrap
 @media(max-width:720px){.showcase-teaser,.project-feature{grid-template-columns:1fr;gap:24px}.showcase-teaser{padding:22px}.project-section{padding-top:30px}.project-feature{margin-block:24px}.hardware-gallery{gap:18px}.project-copy h3,.dashboard-story h3{font-size:24px}.links a{padding-inline:9px;font-size:13px}}
 @media(max-width:450px){.hardware-gallery{grid-template-columns:1fr}.links a{padding-inline:7px}.showcase-teaser h3{font-size:23px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Message examples use real project capabilities without customer information. */
+.notification-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.notification-card{display:flex;flex-direction:column;padding:24px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.notification-type{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--brand);margin-bottom:12px;font-weight:700}
+.notification-card h3{font-size:23px;line-height:1.25;min-height:2.5em;margin-bottom:22px}
+.message-sample{display:flex;flex-direction:column;gap:12px;flex:1;border-top:1px solid #304c46;padding-top:18px}
+.message-sender{display:flex;align-items:center;gap:9px;font-size:13px;color:#cee7db;margin-bottom:2px}
+.message-sender>span:last-child{margin-left:auto;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#a4b8ad}
+.chat-mark{display:grid;place-items:center;width:23px;height:20px;border-radius:6px 6px 6px 1px;background:#2e7352;color:#e4f6e9;font-size:21px;font-weight:700;line-height:1;padding-bottom:7px}
+.message-bubble{padding:16px;background:#e6f2e9;color:#193c2c;border-radius:3px 12px 12px 12px;font-size:14px;line-height:1.55}
+.message-bubble p{color:#193c2c}.message-bubble p+p{margin-top:10px}.message-bubble .message-subject{font-size:13px;font-weight:700;color:#1b6542}
+.message-context{color:var(--muted);font-size:12px;line-height:1.6;margin-top:auto;padding-top:3px}
+.report-attachment{display:flex;align-items:center;gap:10px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #bed3c5;font-size:13px}
+.pdf-mark{display:grid;place-items:center;flex:0 0 32px;height:40px;background:#cb4c58;color:white;border-radius:3px 9px 3px 3px;font-size:10px;font-weight:700;letter-spacing:.04em}
+.notification-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:21px}
+.notification-footer p{font-size:12px;color:var(--muted)}
+@media(max-width:960px){.notification-grid{gap:15px}.notification-card{padding:19px}.notification-card h3{font-size:21px}}
+@media(max-width:720px){.notification-grid{grid-template-columns:1fr}.notification-footer{align-items:start;flex-direction:column;gap:16px}.notification-card h3{margin-bottom:18px;min-height:0}.notification-card{padding:24px}}
+@media(max-width:640px){.industrial .domain-image{height:auto;aspect-ratio:610/1040}}
