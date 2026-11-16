@@ -147,3 +147,16 @@ html{scroll-padding-top:155px}.container{padding-inline:22px}.nav{flex-wrap:wrap
 .sensor-grid p{font-size:14px;margin-top:12px}
 .sensor-status{display:inline-block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--industrial);margin-bottom:10px}
 @media(max-width:720px){.sensor-grid{grid-template-columns:1fr}}
+/* Project photographs, recorded dashboards and overview video. */
+.showcase-teaser{display:grid;grid-template-columns:1.4fr 1fr;gap:38px;align-items:center;padding:30px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.showcase-teaser img{border-radius:5px;width:100%}.showcase-teaser h3{font-size:26px;margin-bottom:15px}.showcase-teaser p:not(.eyebrow){font-size:14px;margin-bottom:24px}
+.overview-video{display:block;width:100%;aspect-ratio:16/9;background:#111d2c;border:1px solid var(--line);border-radius:8px}
+.video-description{margin-top:14px;font-size:13px;color:var(--muted)}.video-description summary{cursor:pointer;min-height:36px}.video-description p{max-width:900px;margin-top:10px}
+.project-section{border-top:1px solid var(--line);margin-top:30px;padding-top:48px}
+.project-feature{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;margin-block:34px}
+.project-feature img,.hardware-gallery img{border-radius:6px;aspect-ratio:4/3;object-fit:cover;width:100%}.project-copy h3{font-size:28px;margin-bottom:18px}.project-copy p+p{margin-top:16px}
+.hardware-gallery{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:32px}.hardware-gallery img{object-fit:contain;background:#14202b}
+.dashboard-story{margin-top:52px}.dashboard-story>div{max-width:850px;margin-bottom:26px}.dashboard-story h3{font-size:28px;margin-bottom:15px}.dashboard-story img{width:100%;height:auto;border-radius:7px;border:1px solid var(--line)}.dashboard-story a{display:block}
+@media(max-width:720px){.showcase-teaser,.project-feature{grid-template-columns:1fr;gap:24px}.showcase-teaser{padding:22px}.project-section{padding-top:30px}.project-feature{margin-block:24px}.hardware-gallery{gap:18px}.project-copy h3,.dashboard-story h3{font-size:24px}.links a{padding-inline:9px;font-size:13px}}
+@media(max-width:450px){.hardware-gallery{grid-template-columns:1fr}.links a{padding-inline:7px}.showcase-teaser h3{font-size:23px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
