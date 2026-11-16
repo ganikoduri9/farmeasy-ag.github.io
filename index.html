@@ -15,7 +15,9 @@
 <a href="contact.html">Contact</a></nav>
   </div></header>
   <main id="main" tabindex="-1">
-    <section class="container hero">
+    <section class="hero-stage" aria-label="FarmEasy agriculture and industrial solutions">
+      <div class="hero-backdrop" aria-hidden="true"><img class="hero-scene hero-scene-farm" src="assets/images/coconut-farm.webp" alt="" width="1080" height="810" fetchpriority="high"><img class="hero-scene hero-scene-industry" src="assets/images/factory-tanks.webp" alt="" width="1800" height="1350"></div>
+      <div class="container hero">
       <div class="hero-copy"><p class="eyebrow">Sensors · Telemetry · Control</p><h1>Remote monitoring &amp; automation for <span>agriculture and industry.</span></h1><p class="lead">From soil moisture and irrigation to industrial tanks and process temperatures, FarmEasy connects real-world measurements with remote visibility, alerts and practical controls.</p><div class="btnrow"><a class="btn primary" href="solutions.html">Explore solutions <span aria-hidden="true">→</span></a><a class="btn" href="contact.html">Discuss your project</a></div></div>
       <aside class="focus-panel" aria-label="Our focus"><p class="eyebrow">From measurement to action</p>
         <div class="focus-row"><span class="step">01</span><div><h2>Monitor</h2><p>Soil moisture, temperature and tank level.</p></div></div>
@@ -23,6 +25,8 @@
         <div class="focus-row"><span class="step">03</span><div><h2>Plan the next action</h2><p>Irrigation control and automation scoped to the needs of each project.</p></div></div>
         <a class="text-link" href="about.html">Meet FarmEasy <span aria-hidden="true">↗</span></a>
       </aside>
+      </div>
+      <div class="container hero-bottom"><div class="hero-domains"><a href="solutions.html#agriculture"><span class="domain-dot" aria-hidden="true"></span>Agriculture IoT</a><a href="solutions.html#industrial"><span class="domain-dot industrial-dot" aria-hidden="true"></span>Industrial monitoring</a><a href="solutions.html#ai-assistance">AI assistance <span class="inline-planned">Planned</span></a></div><button class="motion-toggle" type="button" hidden>Pause motion</button></div>
     </section>
     <section class="container section" aria-labelledby="domains-title">
       <div class="section-heading"><div><p class="eyebrow">Two areas of focus</p><h2 id="domains-title">One practical approach to IoT.</h2></div><p>Start with the conditions you need to see.<br>Build the monitoring and controls around them.</p></div>
@@ -30,6 +34,11 @@
         <article class="domain-card agriculture"><img class="domain-image" src="assets/images/farmeasy-node.jpeg" alt="FarmEasy sensor node installed beside plants" width="5712" height="4284" loading="lazy"><div class="domain-body"><p class="eyebrow">Agriculture IoT</p><h3>Stay connected to the field.</h3><p>Soil moisture monitoring, irrigation control and solar-powered telemetry for remote farm locations.</p><ul class="topic-list"><li>Soil &amp; environmental sensing</li><li>Irrigation &amp; relay control</li><li>Solar remote telemetry</li></ul><a class="text-link" href="solutions.html#agriculture">Explore agriculture solutions <span aria-hidden="true">→</span></a></div></article>
         <article class="domain-card industrial"><picture><source media="(max-width: 640px)" srcset="assets/images/industrial-monitoring-field-mobile.svg" width="610" height="1040"><img class="domain-image" src="assets/images/industrial-monitoring-field.svg" alt="Factory tank and radar sensor photos beside a conceptual diagram showing radar echoes, an immersed RTD probe, edge node, cloud, dashboard and WhatsApp notifications" width="1200" height="520" loading="lazy"></picture><div class="domain-body"><p class="eyebrow">Industrial monitoring &amp; automation</p><h3>Bring your process into view.</h3><p>Monitoring work across oil-factory tanks, boiler temperatures and radar level sensors.</p><ul class="topic-list"><li>Tank level &amp; temperature</li><li>Multi-point RTD sensing</li><li>Radar &amp; RS485 integration</li></ul><a class="text-link" href="solutions.html#industrial">Explore industrial solutions <span aria-hidden="true">→</span></a></div></article>
       </div>
+    </section>
+
+
+    <section class="container section" id="ai-preview" aria-labelledby="ai-preview-title">
+      <div class="ai-banner"><div class="ai-banner-copy"><p class="eyebrow">AI assistance <span class="planned-badge">Planned offering</span></p><h2 id="ai-preview-title">Your site. Your questions.<br>One conversation.</h2><p>We’re planning a personalized AI agent inside your FarmEasy portal, built around your site’s readings, alerts and reports.</p><p>Ask about your operations in everyday language, with an experience shaped around the way your team works.</p><a class="text-link" href="solutions.html#ai-assistance">Explore the planned AI offering <span aria-hidden="true">→</span></a></div><div class="portal-concept" aria-label="Illustration of the planned AI portal"><div class="portal-title"><img src="assets/images/logo.png" alt="" width="34" height="34" loading="lazy"><strong>FarmEasy · Your site</strong><span>Concept</span></div><div class="portal-body"><p class="portal-greeting">What would you like to know?</p><ul class="portal-questions"><li>How have the tank levels changed?</li><li>Which alerts need a closer look?</li><li>Summarize my farm’s latest readings.</li></ul><div class="portal-context"><span>Readings</span><span>Alerts</span><span>Reports</span></div><p class="portal-note">Example questions for the planned portal experience.</p></div></div></div>
     </section>
 
     <section class="container section" id="whatsapp-updates" aria-labelledby="whatsapp-title">
@@ -53,4 +62,5 @@
     </div><div class="container copyright">© <span id="y">2026</span> FarmEasy</div>
   </footer><script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   <script src="assets/js/video-player.js" defer></script>
+  <script src="assets/js/site-motion.js" defer></script>
 </body></html>
