@@ -54,6 +54,7 @@ li+li{margin-top:.5rem}
 .domain-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .domain-image{width:100%;height:240px;object-fit:cover}
 .agriculture .domain-image{object-position:center 52%}
+.industrial .domain-image{object-fit:contain;background:#c6c5bd}
 .illustration-wrap{position:relative}
 .illustration-wrap .domain-image{object-fit:contain;background:#102332}
 .illustration-label{position:absolute;right:12px;bottom:8px;font-size:9px;color:var(--industrial);letter-spacing:.05em}
