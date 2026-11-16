@@ -170,7 +170,7 @@ html{scroll-padding-top:155px}.container{padding-inline:22px}.nav{flex-wrap:wrap
 .message-sample{display:flex;flex-direction:column;gap:12px;flex:1;border-top:1px solid #304c46;padding-top:18px}
 .message-sender{display:flex;align-items:center;gap:9px;font-size:13px;color:#cee7db;margin-bottom:2px}
 .message-sender>span:last-child{margin-left:auto;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#a4b8ad}
-.chat-mark{display:grid;place-items:center;width:23px;height:20px;border-radius:6px 6px 6px 1px;background:#2e7352;color:#e4f6e9;font-size:21px;font-weight:700;line-height:1;padding-bottom:7px}
+.message-logo{width:36px;height:36px;flex:0 0 36px;object-fit:contain;border-radius:50%;background:#f7f3e5;padding:2px}
 .message-bubble{padding:16px;background:#e6f2e9;color:#193c2c;border-radius:3px 12px 12px 12px;font-size:14px;line-height:1.55}
 .message-bubble p{color:#193c2c}.message-bubble p+p{margin-top:10px}.message-bubble .message-subject{font-size:13px;font-weight:700;color:#1b6542}
 .message-context{color:var(--muted);font-size:12px;line-height:1.6;margin-top:auto;padding-top:3px}
