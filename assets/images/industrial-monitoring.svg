@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" fill="none">
+  <rect width="600" height="300" fill="#102332"/>
+  <g stroke="#204052"><path d="M0 60H600M0 120H600M0 180H600M0 240H600M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300M420 0V300M480 0V300M540 0V300"/></g>
+  <g stroke="#8FC9D5" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M72 100Q72 76 129 76Q186 76 186 100V212Q186 236 129 236Q72 236 72 212Z" fill="#183849"/><ellipse cx="129" cy="100" rx="57" ry="24"/><path d="M72 158Q129 182 186 158M72 196Q129 220 186 196"/>
+    <path d="M224 133Q224 113 264 113Q304 113 304 133V212Q304 232 264 232Q224 232 224 212Z" fill="#183849"/><ellipse cx="264" cy="133" rx="40" ry="20"/>
+    <path d="M224 183Q264 203 304 183M94 232V250M164 232V250M240 229V250M288 229V250M330 222H372V199H400M186 210H208V248H343V222"/>
+    <rect x="400" y="106" width="132" height="96" rx="8" fill="#102332"/><path d="M450 202V226M482 202V226M436 226H496"/>
+  </g>
+  <g stroke="#61D98B" stroke-width="2.5" stroke-linecap="round">
+    <path d="M129 76V44H466V106M264 113V66H384V154H400" stroke-dasharray="4 7"/><path d="M420 128H446M420 153H446M420 178H446M463 128H512M463 153H499M463 178H506"/>
+    <path d="M336 124V174A10 10 0 1 0 348 174V124A6 6 0 0 0 336 124Z" fill="#102332"/><path d="M342 148V184"/><circle cx="129" cy="76" r="5" fill="#61D98B"/><circle cx="264" cy="113" r="5" fill="#61D98B"/>
+  </g>
+</svg>
